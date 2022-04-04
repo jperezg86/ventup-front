@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TreeImpl from "./TreeImpl";
 import reportWebVitals from "./reportWebVitals";
-import { TreeContext, TreeContextProvider } from "./components/tree/TreeContextProvider";
+import PushNotifications from "./PushNotifications";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TreeContextProvider>
-        <TreeImpl />
-    </TreeContextProvider>
+        <PushNotifications />
   </React.StrictMode>,
   document.getElementById("root")
 );
